@@ -9,12 +9,13 @@
     <meta property="og:image" content="og-graph.png">
     <meta property="og:url" content="og-graph.png">
     <link rel="icon" href="fav.png" type="image/png"/>
-    <link rel="stylesheet" href="./css/swiper.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/starter.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+   
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: montserrat;
+      }
       .dragon-box {
         background: linear-gradient(45deg, #b5bdf6, #7d6eba);
         width: 100%;
@@ -43,12 +44,42 @@
         text-transform: uppercase;
        
 }
+h4 {
+  text-align: center;
+}
+.coming-soon {
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+}
 
-
+@media (max-width: 767px) {
+  .dragon-box img {
+    width: 100%;
+    bottom: 0;
+    position: relative !important;
+  }
+  .dragon-box h1 {
+    font-size: 60px;
+        margin: 0;
+        line-height: 1;
+        padding-top: 50px;
+  }
+  .coming-soon {
+    font-size: 30px;
+    margin-top: 16px;
+  }
+  .dragon-box {
+    display: block;
+  }
+}
     </style>
     <title>Dpad</title>
     <section class="dragon-box" id="scene">
-      <h1 data-depth="2" class="cmg-text">Coming Soon</h1>
+      <h1 data-depth="2" class="cmg-text">Cake Dragon
+        <div class="coming-soon">Coming Soon</div>
+      </h1>
+      
       <img data-depth="1" src="./img/dragon.png" alt="">
     </section>
     <script src="./js/jQuery.min.js"></script>
