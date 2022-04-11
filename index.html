@@ -10,19 +10,25 @@
     <meta property="og:url" content="og-graph.png">
     <link rel="icon" href="fav.png" type="image/png"/> -->
   
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
     <style>
+      
       body {
         margin: 0;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
-          overflow:hidden;
+        background: linear-gradient(45deg, #b5bdf6, #7d6eba);
+      }
+     .cmg-text {
+        font-family: 'Cute Font', cursive !important;
+        font-size: 250px !important;
+        line-height: 1;
       }
       .dragon-box {
-        background: linear-gradient(45deg, #b5bdf6, #7d6eba);
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         text-align: center;
         display: flex;
         align-items: center;
@@ -51,11 +57,13 @@ h4 {
   text-align: center;
 }
 .coming-soon {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 400;
   color: #fff;
 }
-
+.sliner {
+  font-size: 50px; color:#902daf;
+}
 @media (max-width: 767px) {
   .dragon-box img {
     width: 100%;
@@ -75,6 +83,12 @@ h4 {
   .dragon-box {
     display: block;
   }
+  .sliner {
+    font-size: 30px;
+  }
+  section {
+    padding: 20px;
+  }
 }
     </style>
     <title>Cake Dragon</title>
@@ -82,8 +96,21 @@ h4 {
       <h1 data-depth="1" class="cmg-text">Cake Dragon
         <div class="coming-soon">Coming Soon</div>
       </h1>
-      
       <img data-depth=".7" src="./img/dragon.png" alt="">
+    
+    </section>
+    <section style="text-align: center;">
+    <h3 style="font-weight: 400;">Token contract- <a href="https://bscscan.com/token/0x830045Ccd6962a86420d777C17A1D7d31F61f770" style="color: #902daf;word-break: break-all;"> 0x830045Ccd6962a86420d777C17A1D7d31F61f770 </a></h3>
+      <h1 style="font-size: 30px;">A project under DPAD Social Venture Builder</h1>
+      <h1 class="sliner" >A hyperdeflationary Defi protocol with massive passive income opportunity</h1>
+      <ul style="padding: 0;
+      list-style: none;
+      line-height: 1.7;
+      color: #321b5a;
+      font-size: 16px;">
+        <li>Next Generation of Meme crypto</li>
+        <li>Viral marketing campaign</li>
+      </ul>
     </section>
     <script src="./js/jQuery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
