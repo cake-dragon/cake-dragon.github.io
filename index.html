@@ -194,12 +194,13 @@ h4 {
     bottom: 0;
     position: relative !important;
   }
-  .dragon-box h1 {
+   .dragon-box h1 {
     font-size: 75px !important;
         margin: 0;
         line-height: 1.7;
-        padding-top: 50px;
+        padding-top: 115px;
   }
+    
   .coming-soon {
     font-size: 53%;
         font-weight: 400;
@@ -221,6 +222,7 @@ h4 {
   #token-input {
     width: 90% !important;
     margin: auto;
+       word-break: break-all;
   }
   #scene {
     display: block;
@@ -266,12 +268,12 @@ h4 {
 
     <div class="token-box">
       <label for="" class="token-label">Token contract</label>
-      <a style="color: #902daf;word-break: break-all; text-decoration: none;">  
-      <input id="token-input" type="text" style="width: 450px;" class="form-control input-outline mr-3" value="0x830045Ccd6962a86420d777C17A1D7d31F61f770">
-
-      </a>
+       <p  id="token-input" class="mr-3 mb-0">
+        0x830045Ccd6962a86420d777C17A1D7d31F61f770
+      </p>
+        
       <div class="d-flex svg-buttons">
-        <button id="contract-copy-btn" class="btn btn-outline-primary btn-lg mr-3" title="Copy">
+        <button id="contract-copy-btn" onclick="copyToClipboard('#token-input')" class="btn btn-outline-primary btn-lg mr-3" title="Copy">
           <svg width="68" height="80" viewBox="0 0 68 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M62.7 17.5H22.3C19.3729 17.5 17 19.8729 17 22.8V74.2C17 77.1271 19.3729 79.5 22.3 79.5H62.7C65.6271 79.5 68 77.1271 68 74.2V22.8C68 19.8729 65.6271 17.5 62.7 17.5Z" fill="white"/>
             <path d="M62.7 17.5H22.3C19.3729 17.5 17 19.8729 17 22.8V74.2C17 77.1271 19.3729 79.5 22.3 79.5H62.7C65.6271 79.5 68 77.1271 68 74.2V22.8C68 19.8729 65.6271 17.5 62.7 17.5Z" fill="white"/>
@@ -349,6 +351,13 @@ $('a.page').click(function(){
     return false;
 });
 
+        function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
 
  </script>
 </body>
